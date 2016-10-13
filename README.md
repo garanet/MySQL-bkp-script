@@ -11,21 +11,23 @@ Make sure the script owner is root and changes the permissions in 744.
 
 As root, run the script with the command: # sh full-db-mysql.sh .
 
-@ Procedure
+@ Procedure to use it.
 
 ~:$ git clone https://github.com/garanet/MySQL-bkp-script.git
 
 ~:$ cd MySQL-bkp-script/
 
--:$ sudo su -
+~:$ sudo su -
 
--:$ mkdir /backup
+~:$ mkdir /backup
 
 ~:$ mv full-db-mysql.sh /backup
 
--:$ cd /backup
+~:$ cd /backup
 
--:$ chmod a+x full-db-mysql.sh
+~:$ chmod a+x full-db-mysql.sh
+
+~:$ vi full-db-mysql.sh <-- Change the variables.
 
 ~:$ sh full-db-mysql.sh
 
